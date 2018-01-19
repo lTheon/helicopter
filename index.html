@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>asd</title>
+    <!--***LIBS***-->
+    <script src="three.js"></script>
+    <script src="jquery-1.12.1.js"></script>
+    <script src="ColladaLoader.js"></script>
+    <!--***CLASSES***-->
+    <script src="Main.js"></script>  
+    <script src="core/CameraPosition.js"></script>
+    <script src="core/Materials.js"></script>
+    <script src="core/Skybox.js"></script>
+    <script src="core/Building.js"></script>
+    <script src="players/BlackHawk.js"></script>
+    <script src="players/BlackHawk_StartScreen.js"></script>
+    <script src="players/Helikopter.js"></script>
+    <script src="players/Helikopter_StartScreen.js"></script>
+    <script src="screens/StartScreen.js"></script>
+    <script src="screens/HelpScreen.js"></script>
+    <script src="screens/CockpitScreen.js"></script>
+    <script src="ui/Sliders.js"></script>
+    <script>
+        window.addEventListener("load", function () {
+            main = new StartScreen();
+        });
+    </script>
+    <style>
+        * {
+            -webkit-user-select: none;
+            user-select:none;
+            -moz-user-select:none;
+        }
+
+        #scene{
+            position:fixed;
+        }
+        #start{
+            position:fixed;
+            margin:0 auto;
+            width:100vw;
+            height:100vh;
+        }
+        #start>canvas{
+            position:fixed;
+        }
+        body{
+            width:100vw;
+            height:100vh;
+            margin:0 auto;
+        }
+    </style>
+</head>
+<body id="body">
+    <div id="start"></div>
+    <div id="scene"></div>
+</body>
+</html>
